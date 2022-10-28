@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(banner2.jpg);
+    background-position-y: 80;
+    background-position-x: center;
+    background-repeat: repeat;
+    background-size: 100% ;
+    width: 100%;
+    height: 70px;
+   
+}
+
+.header__div-h1 {
+    transition: 1s;
+    color: rgba(232, 75, 57);
+    font-weight: 900;
+    font-size: 3em;
+    cursor: default;
+    font-style: italic;
+}
+
+.header__div-h1:hover {
+    font-size: 2.5em;
+}
+
+nav {
+    background-color: rgba(68, 71, 220, 0.931);
+    display: flex;
+    flex-direction: row;
+}
+
+.nav__a-img {
+    height: 67PX;
+    display: block;
+    padding: 13px;
+    transition: .5s;
+}
+
+.nav__a-img:hover {
+    height: 64px;
+    padding-top:16px ;
+}
+
+.nav__div {
+    flex-direction: column;
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+.nav__div-a {
+    color: rgba(232, 75, 57);
+    font-weight: bold;
+    background-color: rgba(48,48,48);
+    padding: 5px;
+    border-radius: 8px;
+    margin: 1px;
+}
+
+.nav__div-a:hover {
+    background-color: rgb(37, 37, 37);
+}
+
+#que-es {
+    display: flex;
+    background:linear-gradient(to right, rgb(255, 51, 0),rgb(255, 187, 0));
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.que-es__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.que-es__div-h2 {
+    padding: 0px 5px;
+    font-size: 35px;
+    margin: 16px 0px;
+    border: 4px inset rgb(240, 32, 9);
+    border-radius: 15px;
+}
+
+.que-es__div-p {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 15px;
+    color:rgb(19, 19, 19);
+}
+
+.que-es__img {
+    height: 200px;
+    border-radius: 20px;
+    flex-wrap: nowrap;
+    margin: 15px 0px;
+    border: 7px inset rgb(30, 30, 30);
+}
+
+#como-jugar {
+    background-color: rgba(0, 0, 0, 0.891);
+    display: flex;
+    flex-direction: column;
+}
+
+.como-jugar__div {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.como-jugar__div-h2 {
+    color: rgba(255, 255, 255, 0.824);
+    margin: 18px;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.como-jugar__ol {
+    color: rgba(255, 255, 255, 0.824);
+    display: flex;
+    flex-direction: column;
+}
+
+.como-jugar__ol li {
+    padding: 4px;
+}
+
+#como-jugar h3 {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.824);
+    border:5px inset rgba(255, 255, 255, 0.824);
+    padding: 5px;
+    margin:18px
+}
+
+.como-jugar__div2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.como-jugar__div2 iframe {
+    padding: 10px 0px 18px ;
+}
+
+#objetivo {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.915);
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.objetivo__h2 {
+    margin: 20px 10px 8px;
+    color: rgba(255, 255, 255, 0.824);
+}
+
+.objetivo__p {
+    margin: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    color:rgba(0, 255, 23);
+}
+
+footer {
+    height: 15vh;
+    background-color: rgba(29, 29, 29, 0.891);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    font-weight: bold;
+    font-size: 18px;  
+    color: rgb(255, 255, 255);
+    padding: 3px;
+    text-decoration: underline;
+    border: 2px inset rgb(255, 255, 255);
+    margin-top: 10px;
+}
+
+footer h4 {
+    padding: 5px 10px 2px;
+    color: rgb(255, 255, 255);
+}
+
+.mail {
+    color:rgba(232, 75, 57);
+}
+
+@media (min-width:720px) {
+    .nav__a-img {
+        height: 115px;
+    }
+
+    .nav__a-img:hover {
+        height: 110px;
+        padding-top: 18px;
+    }
+
+    .nav__div-a {
+        padding: 11.7px;
+        font-size: 18px;
+    }
+
+    #que-es {
+        flex-direction: row;
+    }
+
+    .que-es__div {
+        flex-direction: row;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .que-es__div-p {
+        font-size: 1.3em;
+    }
+
+    .que-es__img {
+        margin-right:13px;
+    }
+
+    .como-jugar__div-h2 {
+        font-size: 2em;
+    }
+
+    .como-jugar__ol {
+        font-size: 20px;
+    }
+
+    .objetivo__h2 {
+        font-size: 33px;
+    }
+
+    .objetivo__p {
+        font-size: 1.4em;
+    }
+}
